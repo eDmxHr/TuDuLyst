@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ToDoApp from '../components/ToDoApp.vue'
-import ToDoList from '../components/ToDoList.vue'
+
 
 
 const router = createRouter({
@@ -11,11 +11,6 @@ const router = createRouter({
       name: 'ToDoApp',
       component: ToDoApp
     },
-    {
-      path: '/ToDoList',
-      name: 'ToDoList',
-      component: ToDoList
-    }
   ]
 })
 

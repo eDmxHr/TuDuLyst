@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+      .btn-primary {
+          @apply bg-gray shadow-lg px-5 py-3 border rounded-lg text-sm text-white border-cream hover:bg-white hover:text-gray tracking-wider font-semibold transition uppercase
+      }
+    .btn-remove {
+        @apply bg-gray shadow-lg px-5 py-3 border rounded-lg text-xs text-white border-cream hover:bg-white hover:text-gray tracking-wider font-semibold transition uppercase
+    }
+  }
