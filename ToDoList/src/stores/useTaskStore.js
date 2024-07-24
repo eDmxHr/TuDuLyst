@@ -7,10 +7,13 @@ export const useTaskStore = defineStore('tasks', {
     }),
     actions: {
         addToDo (item){
-            this.tasks.push({item, id: this.id++});
+            this.id = this.id + 1
+            this.tasks.push(
+              {name: item, id: this.id}
+            );
         },
-         deleteTask ()  {
-            this.tasks = this.tasks.filter((item) => item.id !== item.id);
+         deleteTask (id)  {
+            this.tasks = this.tasks.filter((item) => item.id !== id);
         },
     },
 })
